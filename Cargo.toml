@@ -1,0 +1,14 @@
+[package]
+name = "test-waitlist"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git", rev = "5d8fb07", features = ["debug"] }
+scale-info = { version = "2", default-features = false }
+parity-scale-codec = { version = "3", default-features = false }
+io = { path = "io" }
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", rev = "5d8fb07" }
+io = { path = "io" }
