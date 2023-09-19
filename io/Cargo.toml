@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-gstd = { git = "https://github.com/gear-tech/gear.git", rev = "5d8fb07", features = ["debug"] }
-gmeta = { git = "https://github.com/gear-tech/gear.git", rev = "5d8fb07" }
+gstd = { git = "https://github.com/gear-tech/gear.git", rev = "d8d59287bf8", features = ["debug"] }
+gmeta = { git = "https://github.com/gear-tech/gear.git", rev = "d8d59287bf8" }
 
 scale-info = { version = "2", default-features = false }
 parity-scale-codec = { version = "3", default-features = false }

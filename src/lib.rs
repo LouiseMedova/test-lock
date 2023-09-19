@@ -9,13 +9,13 @@ async fn main() {
     let address = unsafe { PANIC_ADDRESS };
     match action {
         Action::SendWithoutReplyDeposit => {
-            msg::send_with_gas_for_reply(address, "", 10_000_000_000, 0, 0)
+            msg::send_with_gas_for_reply(address, "", 500_000_000_000, 0, 0)
                 .expect("Error in sending a message `NFTAction::Mint`")
                 .await
                 .expect("Error in receiving reply");
         }
         Action::SendWithReplyDeposit => {
-            msg::send_with_gas_for_reply(address, "", 10_000_000_000, 0, 5_000_000_000)
+            msg::send_with_gas_for_reply(address, "", 500_000_000_000, 0, 5_000_000_000)
                 .expect("Error in sending a message `NFTAction::Mint`")
                 .await
                 .expect("Error in receiving reply");
